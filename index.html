@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MKTG-10258 — ReadyAPI migration design preview</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --orange: #ff6c37;
+        --ink: #212121;
+        --muted: #6b6b6b;
+        --surface: #fff7f4;
+        --border: #ffe1d4;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, sans-serif;
+        color: var(--ink);
+        background: linear-gradient(180deg, #fff 0%, var(--surface) 100%);
+        min-height: 100vh;
+      }
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 48px 24px 64px;
+      }
+      h1 {
+        font-size: clamp(1.75rem, 4vw, 2.25rem);
+        line-height: 1.15;
+        margin: 0 0 8px;
+      }
+      .eyebrow {
+        color: var(--orange);
+        font-weight: 600;
+        font-size: 0.95rem;
+        margin: 0 0 12px;
+      }
+      .lede {
+        color: var(--muted);
+        max-width: 62ch;
+        line-height: 1.55;
+        margin: 0 0 32px;
+      }
+      .grid {
+        display: grid;
+        gap: 20px;
+      }
+      @media (min-width: 768px) {
+        .grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      .card {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0 8px 24px rgba(255, 108, 55, 0.08);
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+      }
+      .card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 32px rgba(255, 108, 55, 0.14);
+      }
+      .card img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid var(--border);
+      }
+      .card-body {
+        padding: 18px 20px 22px;
+      }
+      .card h2 {
+        margin: 0 0 8px;
+        font-size: 1.125rem;
+      }
+      .card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.5;
+        font-size: 0.95rem;
+      }
+      .links {
+        margin-top: 32px;
+        padding-top: 24px;
+        border-top: 1px solid var(--border);
+        font-size: 0.9rem;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+      .links a {
+        color: var(--orange);
+      }
+      code {
+        font-size: 0.85em;
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 1px 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">MKTG-10258 · ReadyAPI migration landing</p>
+      <h1>Design preview for stakeholder review</h1>
+      <p class="lede">
+        Static snapshots captured from local marketing-site dev on May 28, 2026. Open either layout to
+        review copy, section order, and product demos (self-contained HTML — no localhost required).
+      </p>
+
+      <div class="grid">
+        <a class="card" href="live/index.html">
+          <img src="live/preview.png" alt="Live stakeholder page preview" width="1440" height="900" />
+          <div class="card-body">
+            <h2>Live page (stakeholder layout)</h2>
+            <p>
+              Matches <code>/alternatives/readyapi-migration/</code> — centered hero, tree + code
+              compare demos, three outcome cards, secure section illustration.
+            </p>
+          </div>
+        </a>
+
+        <a class="card" href="proposed/index.html">
+          <img src="proposed/preview.png" alt="Updated design layout preview" width="1440" height="900" />
+          <div class="card-body">
+            <h2>Updated design (<code>?layoutPreview=1</code>)</h2>
+            <p>
+              Captured from <code>?layoutPreview=1</code> on the same route — use this to compare the
+              proposed layout variant side-by-side with the live stakeholder page.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="links">
+        <strong>Reference links</strong><br />
+        Beta (Ben’s branch):
+        <a href="https://mktg-10258.www.postman-beta.com/alternatives/readyapi-migration/"
+          >mktg-10258 beta</a
+        ><br />
+        Engineering PR stack:
+        <a href="https://github.com/postman-eng/marketing-site-www-next-app/pull/2654">#2654</a>
+      </div>
+    </main>
+  </body>
+</html>

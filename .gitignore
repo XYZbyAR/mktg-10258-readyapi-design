@@ -1,0 +1,7 @@
+node_modules/
+*.mjs
+package.json
+package-lock.json
+*-page.html
+layout-preview.html
+proposed-layout*.html
