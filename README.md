@@ -1,16 +1,8 @@
-# MKTG-10258 — ReadyAPI migration design preview
+# MKTG-10258 — ReadyAPI migration design updates
 
-Stakeholder-friendly static snapshot of the **proposed** ReadyAPI migration landing page.
+Snapshot of the **proposed** ReadyAPI migration landing page.
 
-## Share with stakeholders
-
-**https://xyzbyar.github.io/mktg-10258-readyapi-design/**
-
-Opens the proposed layout (`?layoutPreview=1` capture from local dev).
-
-Direct link: [proposed/index.html](proposed/index.html)
-
-Captured May 28, 2026 from `marketing-site-www-next-app` branch `mktg-10258-product-screens`.
+https://xyzbyar.github.io/mktg-10258-readyapi-design/proposed/
 
 ## Reference
 
