@@ -2,9 +2,13 @@
 
 Stakeholder-friendly static snapshots of the ReadyAPI migration landing page.
 
-## View
+## View (share this URL with stakeholders)
 
-Open **`index.html`** (or GitHub Pages once enabled) to pick between:
+**https://xyzbyar.github.io/mktg-10258-readyapi-design/**
+
+Do not share the `github.com/XYZbyAR/...` repo link for viewing — use the Pages URL above.
+
+Open **`index.html`** to pick between:
 
 | Preview | Source |
 | --- | --- |
